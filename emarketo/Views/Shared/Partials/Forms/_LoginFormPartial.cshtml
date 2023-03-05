@@ -1,0 +1,19 @@
+﻿@using emarketo.Models.Forms;
+@model LoginForm
+
+<form asp-action="Index" method="post" asp-route-ReturnUrl="@Model.ReturnUrl">
+    <div class="form-group">
+        <div class="form-label">
+            <label asp-for="Email" class="control-label">E-Mail *</label>
+            <a asp-controller="Register" asp-action="Index">Don't have an Account yet?</a>
+        </div>
+        <input asp-for="Email" class="form-control" />
+    </div>
+    <div class="form-group">
+        <div class="form-label d-flex justify-content-between">
+            <label asp-for="Password" class="control-label">Password *</label>
+            <a asp-controller="Forgot" asp-action="Index">Forgot your password?</a>
+        </div>
+        <input asp-for="Password" class="form-control" />
+    </div>
+</form>

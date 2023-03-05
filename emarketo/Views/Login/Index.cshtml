@@ -1,0 +1,18 @@
+﻿@using emarketo.Models.Forms;
+@model LoginForm
+
+@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/_Layout_CenterScreen.cshtml";
+}
+
+<section class="registerform">
+    <div class="title">
+        <div class="headline">
+            <span>Please Login to Your Account</span>
+            <div class="underline"></div>
+        </div>
+
+    </div>
+    <partial name="~/Views/Shared/Partials/Forms/_LoginFormPartial.cshtml" model="@Model" />
+</section>

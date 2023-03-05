@@ -1,0 +1,11 @@
+﻿@using emarketo.ViewModels.Authentication;
+@using emarketo.Models.Identity;
+@using Microsoft.AspNetCore.Identity;
+@using emarketo.ViewModels.Home;
+
+@inject SignInManager<IdentityUser> signInManager
+@inject UserManager<AppUser> UserManager
+@inject SignInManager<AppUser> SignInManager
+@inject RoleManager<IdentityRole> RoleManager
+
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
